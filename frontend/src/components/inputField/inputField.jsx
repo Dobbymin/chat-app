@@ -3,6 +3,9 @@ import { Button } from '@mui/base/Button';
 import './InputField.css';
 
 const inputField = ({ message, setMessage, sendMessage }) => {
+    const sendMessage = (e) => {
+        e.preventDefault();
+    };
     return (
         <div className="input-area">
             <div className="plus-button">+</div>
